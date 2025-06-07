@@ -1,0 +1,58 @@
+.inclusive-card {
+  --inclusive-card-default-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --inclusive-card-hover-shadow: var(--inclusive-card-default-shadow);
+  --inclusive-card-focus-shadow: var(--inclusive-card-default-shadow);
+  --inclusive-card-cta-focus-decoration: underline;
+  --inclusive-card-cta-focus-shadow: initial;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 0.5rem;
+
+  isolation: isolate;
+
+  transition: box-shadow 200ms ease-in-out;
+}
+
+.inclusive-card:hover {
+  box-shadow: var(--inclusive-card-hover-shadow);
+}
+
+.inclusive-card:focus-within {
+  box-shadow: var(--inclusive-card-focus-shadow);
+}
+
+.inclusive-card__title:focus-within ~ .inclusive-card__cta {
+  text-decoration: var(--inclusive-card-cta-focus-decoration);
+  box-shadow: var(--inclusive-card-cta-focus-shadow);
+}
+
+.inclusive-card__title .inclusive-card__link-area {
+  position: absolute;
+  inset: 0;
+}
+
+.inclusive-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inclusive-card__controls {
+  /* Raise the content above the clickable element spreading the full card */
+  position: relative;
+}
+
+.inclusive-card__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 60ch;
+  padding: 1rem;
+  order: 1;
+}
+
+.inclusive-card__cta {
+}
