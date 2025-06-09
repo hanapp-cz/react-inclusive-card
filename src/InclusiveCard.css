@@ -8,11 +8,11 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  border-radius: 0.5rem;
 
   isolation: isolate;
 
+  border-radius: 0.5rem;
+  overflow: hidden;
   transition: box-shadow 200ms ease-in-out;
 }
 
@@ -30,6 +30,7 @@
 }
 
 .inclusive-card__title .inclusive-card__link-area {
+  /* Clickable area spans the full card (the card has `position: relative`) */
   position: absolute;
   inset: 0;
 }
@@ -51,8 +52,14 @@
   flex-grow: 1;
   max-width: 60ch;
   padding: 1rem;
-  order: 1;
-}
 
-.inclusive-card__cta {
+  /* 
+  If an image is non-decorative, it needs to be announced by screen readers. 
+  To ensure this, we placed the image after the title (heading) in the HTML structure, 
+  as headings typically introduce sections. Otherwise, screen readers might skip the image.
+  
+  Visually, we want the content to appear second, 
+  so we use the `order` property to rearrange the elements accordingly.
+  */
+  order: 1;
 }
