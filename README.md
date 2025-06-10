@@ -112,7 +112,7 @@ import { Card } from "inclusive-card";
 ```
 
 <div align="start">
-   <img src="public/images/example.png" alt="Screenshot of Inclusive Card component" style="max-width:250px; width:100%;" />
+   <img src="public/images/example.png" alt="Screenshot of Inclusive Card component" width="275px" />
 </div>
 
 ---
