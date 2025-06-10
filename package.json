@@ -1,10 +1,9 @@
 {
-  "name": "inclusive-card",
-  "private": true,
+  "name": "react-inclusive-card",
   "version": "0.0.0",
   "type": "module",
   "bin": {
-    "inclusive-card": "dist/cli.cjs"
+    "react-inclusive-card": "dist/cli.cjs"
   },
   "scripts": {
     "dev": "vite",
@@ -13,11 +12,13 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
   },
   "devDependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "@eslint/js": "^9.25.0",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
