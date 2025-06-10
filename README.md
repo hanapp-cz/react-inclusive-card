@@ -6,8 +6,8 @@ A simple, accessible, and flexible card component for React, inspired by the exc
 
 - [Features](#features)
 - [Installation](#installation)
-  - [Install via npm](#install-via-npm)
-  - [Copy the code](#copy-the-code)
+  - [Install via npm](#1-install-via-npm)
+  - [Copy the code](#2-copy-the-code)
 - [Usage](#usage)
 - [API](#api)
   - [\<Card>](#card)
@@ -145,6 +145,8 @@ import { Card } from "inclusive-card";
 
 - Use for the main heading of the card.
 - Renders as a heading element (`h1`-`h6`) with an anchor link that makes the whole card clickable if `href` or `customLinkComponent` is provided.
+
+---
 
 ### `<Card.Controls>`
 
