@@ -1,0 +1,47 @@
+.card-container {
+  max-width: 300px;
+}
+
+.card-content {
+  font-family: Helvetica, sans-serif;
+  gap: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card-content > * {
+  margin: 0;
+}
+
+.card-image {
+  height: 10rem;
+}
+
+.card-title {
+  color: hsl(121 38% 29%);
+}
+
+a {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.btn {
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: hsl(121 28% 80%);
+}
+
+.btn-secondary {
+  border-color: hsl(121 38% 80%);
+  color: hsl(121 38% 29%);
+}
