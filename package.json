@@ -5,10 +5,17 @@
   "bin": {
     "react-inclusive-card": "dist/cli.cjs"
   },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "npm run build:cmp && npm run copy:css && npm run build:cli",
+    "build:cmp": "tsc -p tsconfig.build.json",
     "build:cli": "tsc scripts/cli.ts --outDir dist --module commonjs --esModuleInterop && mv dist/cli.js dist/cli.cjs && chmod +x dist/cli.cjs",
+    "copy:css": "cp src/InclusiveCard.css dist/",
     "lint": "eslint .",
     "preview": "vite preview"
   },
