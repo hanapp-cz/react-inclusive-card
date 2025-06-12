@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-import fs from "fs";
-import path from "path";
-import readline from "readline";
+import fs from 'fs';
+import path from 'path';
+import readline from 'readline';
 
 // Use yellow color for the path
 const yellow = "\x1b[33m";
@@ -63,8 +63,11 @@ function copyFile(userPath: string) {
   const cleanedPath = userPath.replace(/\/$/, ""); // Remove trailing slash if present
 
   // Paths
-  const sourceFile = path.resolve(__dirname, "../src/Card.tsx");
-  const sourceStyles = path.resolve(__dirname, "../src/Card.css");
+  const packageRoot = path.dirname(
+    require.resolve("react-inclusive-card/package.json")
+  );
+  const sourceFile = path.join(packageRoot, "src/Card.tsx");
+  const sourceStyles = path.join(packageRoot, "src/InclusiveCard.css");
 
   const destinationFile = path.resolve(
     process.cwd(),
