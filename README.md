@@ -112,7 +112,7 @@ import { Card } from "inclusive-card";
 ```
 
 <div align="start">
-   <img src="public/images/example.png" alt="Screenshot of Inclusive Card component" width="275px" />
+   <img src="https://github.com/hanapp-cz/react-inclusive-card/blob/main/public/images/example.png" alt="Screenshot of Inclusive Card component" width="275px" />
 </div>
 
 ---
