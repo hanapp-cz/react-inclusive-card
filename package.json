@@ -6,7 +6,9 @@
     "react-inclusive-card": "dist/cli.cjs"
   },
   "files": [
-    "dist"
+    "dist",
+    "src/Card.tsx",
+    "src/InclusiveCard.css"
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
