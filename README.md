@@ -2,6 +2,8 @@
 
 A simple, accessible, and flexible card component for React, inspired by the excellent book ["Inclusive Components"](https://inclusive-components.design/cards) by Heydon Pickering.
 
+---
+
 ## Table of Contents
 
 - [Features](#features)
@@ -63,6 +65,8 @@ npx react-inclusive-card --path src/components
 
 This will copy the `InclusiveCard.tsx` component and its styles to the specified directory.
 
+---
+
 ## Usage
 
 ```tsx
@@ -102,7 +106,7 @@ import { Card } from "inclusive-card";
     className="btn btn-secondary"
     style={
       {
-        "--inclusive-card-cta-focus-shadow": "0 0 0 2px hsl(0, 0%, 0%, 0.5)",
+        "--inclusive-card-cta-focus-shadow": "0 0 0 2px hsl(0 0% 0% / 0.5)",
       } as React.CSSProperties
     }
   >
@@ -187,6 +191,8 @@ import { Card } from "inclusive-card";
 - `--inclusive-card-cta-focus-shadow`
 
 1. Or override classes like `.inclusive-card`, `.inclusive-card__title`, `.inclusive-card__controls`, etc.
+
+---
 
 ## Credits
 

@@ -39,5 +39,25 @@
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.30.1",
     "vite": "^6.3.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hanapp-cz/react-inclusive-card.git"
+  },
+  "homepage": "https://github.com/hanapp-cz/react-inclusive-card#readme",
+  "bugs": {
+    "url": "https://github.com/hanapp-cz/react-inclusive-card/issues"
+  },
+  "keywords": [
+    "react",
+    "card",
+    "component",
+    "accessible",
+    "a11y",
+    "inclusive",
+    "ui",
+    "library",
+    "react-component",
+    "cli"
+  ]
 }
